@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    
+    <div id="loader" class="h-[100vh] flex justify-center items-center" style="display: none;">
+        <div class="loader" ></div>
+      </div>
+    
+    <header class="w-[100%]">
+        <div class="mt-[20px] flex justify-center gap-[15px]">
+            <input type="text" class="border-2 w-[250px] h-[40px] focus:outline-none" placeholder="sorch produkct" id="searchInput">
+            <button id="sortPrice" class="bg-indigo-500 text-white px-4 py-2 rounded">Sort by Price ↑</button>
+            <select class="shadow-[0_4px_8px_rgba(0,0,0,0.1)] rounded-md focus:outline-none" id="select">
+                <option value="men's clothing">men's clothing</option>
+                <option value="jewelery">jewelery</option>
+                <option value="electronics">electronics</option>
+                <option value="women's clothing">women's clothing</option>
+            </select>
+            <button class="light shadow-[0_4px_8px_rgba(0,0,0,0.1)] px-2 rounded-md" onclick="DarklightMode()">☀️</button>
+        </div>
+        <br>
+        <div class=" flex flex-wrap gap-[20px] justify-center" id="row" >
+            
+        </div>
+
+        <div class="w-[80%] py-5 shadow-[0_4px_8px_rgba(0,0,0,0.1)] p-6 rounded-lg bg-white mt-[50px] mx-auto mb-[50px]">
+            <p id="Total"></p>
+        </div>
+    </header>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
